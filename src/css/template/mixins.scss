@@ -1,0 +1,97 @@
+// useful
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}
+
+@mixin inline-block($valign:top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+// Spread the image
+%img-spread {
+  display: block;
+  object-fit: cover;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+%justify {
+  text-align: justify;
+  &:after {
+    content: ' ';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+}
+
+%middle {
+  &:before {
+    content: ' ';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+  }
+}
+
+// Absolute positioning
+
+@mixin centered($axis: 'both') {
+  position: absolute;
+
+  @if ($axis == 'both') {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if ($axis == 'x') {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if ($axis == 'y') {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 16px +0rem;
+}
+
+//media
+@mixin desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

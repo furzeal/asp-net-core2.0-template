@@ -1,0 +1,54 @@
+﻿// COLORS
+$white: #fff;
+$orange: #fca211;
+$dred:#a4151a;
+$gray:#474b57;
+$dark-gray:#373e42;
+$light-gray:#dfdcd5;
+$blue:#004cd1;
+$footer-gray:#1c1f29;
+$footer-blue:#083c96;
+$map-blue:#4369aa;
+$dark-blue:#0d1120;
+$beige:#f2f0e8;
+$bg-white:#f4f5f0;
+$bg-blue:#183669;
+$bg-stars:#152c55;
+$sidebar-color:#253468;
+$red:#d71439;
+
+// DIMENSIONS
+$font-size:16px;
+
+// template
+@import "template/mixins";
+@import "template/adjustment";
+
+// fonts
+/*@import 'common/fonts';
+@import 'common/font-awesome/font-awesome';*/
+
+// sprites
+/*@import 'common/sprite';*/
+
+/*// components
+@import 'components/_section';
+@import 'components/_developer';
+@import 'components/_contacts';
+@import 'components/_menu';
+@import 'components/_socials';
+@import 'components/_user';
+@import 'components/_footer';
+@import 'components/_slider';
+@import 'components/_form';
+@import 'components/_frame';
+@import 'components/_blinking-stars';
+@import 'components/_preloader';
+
+
+// pages
+@import 'pages/about';
+@import 'pages/works';
+@import 'pages/blog';
+@import 'pages/index';
+@import 'pages/admin';*/
